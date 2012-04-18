@@ -4,7 +4,7 @@
 #
 # Test the Template::Colour modules.  Run with -h option for help.
 #
-# Copyright (C) 2006-2007 Andy Wardley.  All Rights Reserved.
+# Copyright (C) 2006-2012 Andy Wardley.  All Rights Reserved.
 #
 # This is free software; you can redistribute it and/or modify it
 # under the same terms as Perl itself.

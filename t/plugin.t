@@ -2,12 +2,9 @@
 #
 # t/plugin.t
 #
-# Test the Template::Plugin::Color modules.  These are just wrappers
-# around the T::P::Colour modules, provided for our American friends
-# and other international users who spell 'Colour' as 'Color'.  We 
-# aim to please here at TT Command  :-)
+# Test the TT plugin modules.
 #
-# Copyright (C) 2006 Andy Wardley.  All Rights Reserved.
+# Copyright (C) 2006-2012 Andy Wardley.  All Rights Reserved.
 #
 # This is free software; you can redistribute it and/or modify it
 # under the same terms as Perl itself.
