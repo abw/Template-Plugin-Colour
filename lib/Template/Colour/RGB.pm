@@ -1,25 +1,7 @@
-#============================================================= -*-Perl-*-
-#
-# Template::Colour::RGB
-#
-# DESCRIPTION
-#   Object class for representing RGB colours.
-#
-# AUTHOR
-#   Andy Wardley   <abw@cpan.org>
-#
-# COPYRIGHT
-#   Copyright (C) 2006-2007 Andy Wardley.  All Rights Reserved.
-#
-#   This module is free software; you can redistribute it and/or
-#   modify it under the same terms as Perl itself.
-#
-#============================================================================
-
 package Template::Colour::RGB;
 
 use Template::Colour::Class
-    version   => 2.09,
+    version   => 2.10,
     debug     => 0,
     base      => 'Template::Colour',
     constants => 'ARRAY HASH SCHEME :RGB',
@@ -319,7 +301,7 @@ sub hsv {
 
 =head1 NAME
 
-Template::Colour - module for RGB colour manipulation
+Template::Colour::RGB - module for RGB colour manipulation
 
 =head1 SYNOPSIS
 
@@ -332,11 +314,11 @@ the docs to show examples of use from Perl.
 
 =head1 AUTHOR
 
-Andy Wardley E<lt>abw@cpan.orgE<gt>
+Andy Wardley E<lt>abw@cpan.orgE<gt>, L<http://wardley.org>
 
 =head1 COPYRIGHT
 
-Copyright (C) 2006-2009 Andy Wardley.  All Rights Reserved.
+Copyright (C) 2006-2012 Andy Wardley.  All Rights Reserved.
 
 This module is free software; you can redistribute it and/or
 modify it under the same terms as Perl itself.
@@ -354,6 +336,4 @@ L<Template::Plugin::Colour::RGB>, L<Template::Colour>, L<Template::Colour::HSV>
 # End:
 #
 # vim: expandtab shiftwidth=4:
-
-
 

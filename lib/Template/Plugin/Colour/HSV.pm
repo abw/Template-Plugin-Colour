@@ -1,26 +1,7 @@
-#============================================================= -*-Perl-*-
-#
-# Template::Plugin::Colour::HSV
-#
-# DESCRIPTION
-#   Template Toolkit plugin for representing colours using the HSV
-#   (Hue, Saturation, Value) colour space.
-#
-# AUTHOR
-#   Andy Wardley   <abw@cpan.org>
-#
-# COPYRIGHT
-#   Copyright (C) 2006-2007 Andy Wardley.  All Rights Reserved.
-#
-#   This module is free software; you can redistribute it and/or
-#   modify it under the same terms as Perl itself.
-#
-#============================================================================
-
 package Template::Plugin::Colour::HSV;
 
 use Template::Colour::Class
-    version => 2.09,
+    version => 2.10,
     base    => 'Template::Colour::HSV Template::Plugin';
 
 sub new {
@@ -179,11 +160,11 @@ See Template::Plugin::Colour::RGB for further information.
 
 =head1 AUTHOR
 
-Andy Wardley E<lt>abw@cpan.orgE<gt>
+Andy Wardley E<lt>abw@cpan.orgE<gt>, L<http://wardley.org>
 
 =head1 COPYRIGHT
 
-Copyright (C) 2006-2007 Andy Wardley.  All Rights Reserved.
+Copyright (C) 2006-2012 Andy Wardley.  All Rights Reserved.
 
 This module is free software; you can redistribute it and/or
 modify it under the same terms as Perl itself.

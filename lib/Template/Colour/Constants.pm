@@ -24,6 +24,7 @@ use Badger::Class
 
 1;
 
+__END__
 
 =head1 NAME
 
@@ -106,11 +107,11 @@ HUE, SAT and VAL.
 
 =head1 AUTHOR
 
-Andy Wardley L<http://wardley.org>
+Andy Wardley E<lt>abw@cpan.orgE<gt>, L<http://wardley.org>
 
 =head1 COPYRIGHT
 
-Copyright (C) 2006-2009 Andy Wardley.  All Rights Reserved.
+Copyright (C) 2006-2012 Andy Wardley.  All Rights Reserved.
 
 This module is free software; you can redistribute it and/or
 modify it under the same terms as Perl itself.

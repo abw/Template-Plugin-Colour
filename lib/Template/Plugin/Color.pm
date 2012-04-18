@@ -1,29 +1,7 @@
-#============================================================= -*-Perl-*-
-#
-# Template::Plugin::Color
-#
-# DESCRIPTION
-#   Wrapper around the Template::Plugin::Colour module for those who
-#   spell 'Colour' the American way, 'Color'.
-#
-# AUTHOR
-#   Andy Wardley   <abw@cpan.org>
-#
-# COPYRIGHT
-#   Copyright (C) 2006 Andy Wardley.  All Rights Reserved.
-#
-#   This module is free software; you can redistribute it and/or
-#   modify it under the same terms as Perl itself.
-#
-# REVISION
-#   $Revision: 12 $
-#
-#============================================================================
-
 package Template::Plugin::Color;
 
 use Template::Colour::Class
-    version => 2.09,
+    version => 2.10,
     base    => 'Template::Plugin::Colour',
     throws  => 'Color';
 
@@ -42,8 +20,8 @@ See L<Template::Plugin::Colour>
 =head1 DESCRIPTION
 
 The L<Template::Plugin::Color> module allows you to define and manipulate
-colours using the RGB (red, green, blue) and HSV (hue, saturation,
-value) colour spaces.
+colors using the RGB (red, green, blue) and HSV (hue, saturation,
+value) color spaces.
 
 It is implemented as a subclass of Template::Plugin::Colour (note the 
 spelling difference) and is provided as a convenience for Americans
@@ -55,11 +33,11 @@ it as 'C<Color>'.
 
 =head1 AUTHOR
 
-Andy Wardley E<lt>abw@cpan.orgE<gt>
+Andy Wardley E<lt>abw@cpan.orgE<gt>, L<http://wardley.org>
 
 =head1 COPYRIGHT
 
-Copyright (C) 2006-2007 Andy Wardley.  All Rights Reserved.
+Copyright (C) 2006-2012 Andy Wardley.  All Rights Reserved.
 
 This module is free software; you can redistribute it and/or
 modify it under the same terms as Perl itself.
@@ -67,5 +45,3 @@ modify it under the same terms as Perl itself.
 =head1 SEE ALSO
 
 L<Template::Plugin::Colour>
-
-

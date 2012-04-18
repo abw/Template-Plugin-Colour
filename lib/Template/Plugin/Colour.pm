@@ -1,26 +1,7 @@
-#============================================================= -*-Perl-*-
-#
-# Template::Plugin::Colour
-#
-# DESCRIPTION
-#   Template Toolkit plugin for representing and manipulating colours
-#   via the RGB and HSV colour spaces. 
-#
-# AUTHOR
-#   Andy Wardley   <abw@cpan.org>
-#
-# COPYRIGHT
-#   Copyright (C) 2006-2009 Andy Wardley.  All Rights Reserved.
-#
-#   This module is free software; you can redistribute it and/or
-#   modify it under the same terms as Perl itself.
-#
-#============================================================================
-
 package Template::Plugin::Colour;
 
 use Template::Colour::Class
-    version   => 2.09,
+    version   => 2.10,
     debug     => 0,
     base      => 'Template::Plugin Template::Colour',
     constants => 'HASH';
@@ -206,21 +187,27 @@ How much more black could this be?
 
 The answer is none. None more black.
 
+=head1 VERSION
+
+This is version 0.03 of the Template::Plugin::Colour module set.
+
 =head1 AUTHOR
 
-Andy Wardley E<lt>abw@cpan.orgE<gt> using algorithms from "Computer
-Graphics -- Principles and Practice", Foley et al, 1996, p. 592-593.
+Andy Wardley E<lt>abw@cpan.orgE<gt>, L<http://wardley.org>
 
 =head1 COPYRIGHT
 
-Copyright (C) 2006-2009 Andy Wardley.  All Rights Reserved.
+Copyright (C) 2006-2012 Andy Wardley.  All Rights Reserved.
 
 This module is free software; you can redistribute it and/or
 modify it under the same terms as Perl itself.
+
+=head1 ACKNOWLEDGEMENTS
+
+Written using algorithms from "Computer Graphics -- Principles and Practice", 
+Foley et al, 1996, p. 592-593.
 
 =head1 SEE ALSO
 
 L<Template::Plugin::Colour::RGB>, L<Template::Plugin::Colour::HSV>,
 L<Template::Plugin>
-
-

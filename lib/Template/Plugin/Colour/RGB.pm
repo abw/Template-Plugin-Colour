@@ -1,29 +1,11 @@
-#============================================================= -*-Perl-*-
-#
-# Template::Plugin::Colour::RGB
-#
-# DESCRIPTION
-#   Template Toolkit plugin for representing RGB colours.
-#
-# AUTHOR
-#   Andy Wardley   <abw@cpan.org>
-#
-# COPYRIGHT
-#   Copyright (C) 2006-2009 Andy Wardley.  All Rights Reserved.
-#
-#   This module is free software; you can redistribute it and/or
-#   modify it under the same terms as Perl itself.
-#
-#============================================================================
-
 package Template::Plugin::Colour::RGB;
 
 use Template::Colour::Class
-    version => 2.09,
+    version => 2.10,
     base    => 'Template::Colour::RGB Template::Plugin';
     
 sub new {
-    my $class = shift;
+    my $class   = shift;
     my $context = shift;
     $class->SUPER::new(@_);
 }
@@ -281,11 +263,11 @@ See Template::Plugin::Colour::HSV for further information.
 
 =head1 AUTHOR
 
-Andy Wardley E<lt>abw@cpan.orgE<gt>
+Andy Wardley E<lt>abw@cpan.orgE<gt>, L<http://wardley.org>
 
 =head1 COPYRIGHT
 
-Copyright (C) 2006-2007 Andy Wardley.  All Rights Reserved.
+Copyright (C) 2006-2012 Andy Wardley.  All Rights Reserved.
 
 This module is free software; you can redistribute it and/or
 modify it under the same terms as Perl itself.
