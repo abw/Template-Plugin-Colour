@@ -15,7 +15,7 @@ use Template::Colour::RGB;
 use Template::Colour::HSV;
 use POSIX 'floor';
 
-our $VERSION = 0.03;
+our $VERSION = 0.04;
 our @SCHEME  = qw( 
     black darkest darker dark mid light lighter lightest white 
     pale wash dull bold bright
@@ -363,7 +363,7 @@ The answer is none. None more black.
 
 =head1 VERSION
 
-This is version 0.03 of the Template::Plugin::Colour module set.
+This is version 0.04 of the Template::Plugin::Colour module set.
 
 =head1 AUTHOR
 

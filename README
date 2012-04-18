@@ -142,15 +142,21 @@ EXAMPLES
 
     The answer is none. None more black.
 
+VERSION
+    This is version 0.04 of the Template::Plugin::Colour module set.
+
 AUTHOR
-    Andy Wardley <abw@cpan.org> using algorithms from "Computer Graphics --
-    Principles and Practice", Foley et al, 1996, p. 592-593.
+    Andy Wardley <abw@cpan.org>, <http://wardley.org>
 
 COPYRIGHT
-    Copyright (C) 2006-2009 Andy Wardley. All Rights Reserved.
+    Copyright (C) 2006-2012 Andy Wardley. All Rights Reserved.
 
     This module is free software; you can redistribute it and/or modify it
     under the same terms as Perl itself.
+
+ACKNOWLEDGEMENTS
+    Written using algorithms from "Computer Graphics -- Principles and
+    Practice", Foley et al, 1996, p. 592-593.
 
 SEE ALSO
     Template::Plugin::Colour::RGB, Template::Plugin::Colour::HSV,

@@ -189,7 +189,7 @@ The answer is none. None more black.
 
 =head1 VERSION
 
-This is version 0.03 of the Template::Plugin::Colour module set.
+This is version 0.04 of the Template::Plugin::Colour module set.
 
 =head1 AUTHOR
 
