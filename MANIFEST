@@ -11,9 +11,6 @@ lib/Template/Plugin/Colour.pm
 lib/Template/Plugin/Colour/HSV.pm
 lib/Template/Plugin/Colour/RGB.pm
 MANIFEST			This list of files
-#META.yml
-MYMETA.json
-MYMETA.yml
 README
 t/colour.t
 t/plugin.t
