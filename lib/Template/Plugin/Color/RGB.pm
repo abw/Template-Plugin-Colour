@@ -1,9 +1,10 @@
 package Template::Plugin::Color::RGB;
 
 use Template::Colour::Class
-    version => 2.10,
     base    => 'Template::Plugin::Colour::RGB',
     throws  => 'Color.RGB';
+
+our $VERSION = 2.10;
 
 
 1;

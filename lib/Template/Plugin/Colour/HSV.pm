@@ -1,8 +1,9 @@
 package Template::Plugin::Colour::HSV;
 
 use Template::Colour::Class
-    version => 2.10,
     base    => 'Template::Colour::HSV Template::Plugin';
+
+our $VERSION = 2.10;
 
 sub new {
     my $class   = shift;

@@ -1,9 +1,10 @@
 package Template::Plugin::Colour::RGB;
 
 use Template::Colour::Class
-    version => 2.10,
     base    => 'Template::Colour::RGB Template::Plugin';
-    
+
+our $VERSION = 2.10;
+
 sub new {
     my $class   = shift;
     my $context = shift;

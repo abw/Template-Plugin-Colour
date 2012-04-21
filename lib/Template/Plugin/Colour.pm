@@ -1,10 +1,11 @@
 package Template::Plugin::Colour;
 
 use Template::Colour::Class
-    version   => 2.10,
     debug     => 0,
     base      => 'Template::Plugin Template::Colour',
     constants => 'HASH';
+
+our $VERSION = 2.10;
 
 
 sub new {

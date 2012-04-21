@@ -1,9 +1,10 @@
 package Template::Plugin::Color::HSV;
 
 use Template::Colour::Class
-    version => 2.10,
     base    => 'Template::Plugin::Colour::HSV',
     throws  => 'Color.HSV';
+
+our $VERSION = 2.10;
 
 1;
 
