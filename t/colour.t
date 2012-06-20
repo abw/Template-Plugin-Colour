@@ -17,9 +17,9 @@ use lib qw( ./lib ../lib );
 use Badger::Test
     debug => 'Template::Colour Template::Colour::RGB Template::Colour::HSV',
     args  => \@ARGV,
-    tests => 64;
+    tests => 70;
     
-use Template::Colour;
+use Template::Colour 'Colour Color';
 use constant Col => 'Template::Colour';
 
 my $orange;
@@ -112,6 +112,17 @@ is( $copy->red(), 249, 'copy still has red set to 249' );
 isnt( $copy, $orange, 'different objects again' );
 
 
+#-----------------------------------------------------------------------------
+# Test contructor function
+#-----------------------------------------------------------------------------
+
+$orange = Colour('#ff7f00');
+ok( $orange, 'got colour via Colour() function');
+
+$orange = Color('#ff7f00');
+ok( $orange, 'got colour via Color() function');
+
+
 #-----------------------------------------------------------------------
 # test colour range
 #-----------------------------------------------------------------------
@@ -144,3 +155,18 @@ is( $scheme->{ lightest }, '#FFE1BF', 'lightest orange' );
 is( $scheme->{ white    }, '#FFFFFF', 'white is white' );
 
 
+#-----------------------------------------------------------------------------
+# test colour mix
+#-----------------------------------------------------------------------------
+
+my $white = Colour('#fff');
+my $black = Colour('#000');
+my $grey  = $white->mix($black);
+ok( $grey, "mixed white with black to get grey" );
+is( $grey, '#7F7F7F', "grey is $grey" );
+
+$grey  = $white->mix($black, 0.25);
+is( $grey, '#3F3F3F', "grey at 0.25 is $grey" );
+
+$grey  = $white->mix($black, '75%');
+is( $grey, '#BFBFBF', "grey at 75% is $grey" );

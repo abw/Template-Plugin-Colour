@@ -5,7 +5,13 @@ use Template::Colour::Class
     base      => 'Badger::Base',
     constants => 'HASH SCHEME WHITE BLACK',
     utils     => 'is_object',
-    import    => 'class',
+    import    => 'CLASS class',
+    alias     => {
+        Color => \&Colour,
+    },
+    exports   => {
+        any   => 'Colour Color',
+    },
     messages  => {
         bad_param => 'invalid %s parameter(s): %s',
         no_param  => 'missing %s colour parameter: %s',
@@ -37,6 +43,14 @@ class->methods(
 );
 
 
+sub Colour {
+    return CLASS unless @_;
+    return @_ == 1 && is_object(CLASS, $_[0])
+        ? $_[0]
+        : CLASS->new(@_)
+}
+
+
 sub new {
     my $class = shift;
     my ($config, $space);
@@ -44,7 +58,7 @@ sub new {
     if (@_ == 1) {
         # single argument is either an existing colour object which we copy...
         return $_[0]->copy() 
-            if is_object(ref $class || $class, $_[0]);
+            if is_object(class, $_[0]);
 
         # ... or a hash ref of named parameters...
         #   e.g { rgb => '#rrggbb' }, { rgb => [r, g, b] },  hsv => [h, s, v] }
@@ -174,6 +188,27 @@ sub variations {
     }
     return $scheme;
 }
+
+sub mix {
+    my $self   = shift;
+    my $col2   = Colour(shift);
+    my $weight = shift || 0.5;
+    my $rgb1   = $self->rgb;
+    my $rgb2   = $col2->rgb;
+    my $w1     = ($weight =~ s/^([\d\.]+)%$/$1/) 
+               ? $weight / 100        # 0-100% -> 0-1
+               : $weight;
+    my $w2     = 1 - $w1;
+
+    $self->debug("mixing $rgb1 * $w1 + $rgb2 * $w2") if DEBUG;
+
+    return $self->RGB(
+        int( $rgb1->red   * $w1 + $rgb2->red   * $w2 ),
+        int( $rgb1->green * $w1 + $rgb2->green * $w2 ),
+        int( $rgb1->blue  * $w1 + $rgb2->blue  * $w2 ),
+    )
+}
+
 
 #------------------------------------------------------------------------
 # min($r, $g, $b)
